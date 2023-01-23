@@ -1,27 +1,29 @@
-# DesarrolloNewshore
+# Prueba FrontEnd NewShore 🚀
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
+Proyecto de FrontEnd para calcular la ruta de los vuelos.
 
-## Development server
+# Enunciado 🎯
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+La empresa NEWSHORE AIR necesita una solución web para poder conectar viajes a través del 
+mundo, esta solución debe recibir como parámetros el origen y el destino de viaje del usuario,
+después el sistema debe consultar todos los vuelos asociados que tenga, y devolver la ruta de viaje 
+al usuario si la ruta es posible o un mensaje avisando que la ruta no puede ser calculada.
+Construya una solución web que pueda cumplir con el requerimiento anteriormente descrito, la 
+solución debe estar dividida en módulos
+## Autores ✒️
 
-## Code scaffolding
+# Ejecución del proyecto 🎯
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **1**: - _Se clona el repositorio
+- **2**: - _Se abre el proyecto en Visual Studio Code 
+- **3**: - _Se abre una terminar y se ejecuta el comando para levantar el servidor locan (ng serve -o) 
+- **Jairo Enrique Aquite Ramirez**: - _Administrador BD_ - [jaquite](https://github.com/jaquite)
+- **Luis Fernando Yepes Molina**: - _Scrum Master_ - [luisfer-2019](https://github.com/luisfer-2019)
 
-## Build
+# Pasos para probar el proyecto 🎯
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **1**: - _Digitamos en origin la ciudad de origen
+- **2**: - _Digitamos en Destination la ciudad de destino  
+- **3**: - _Automaticamente nos saldra un modal el cual nos indicará el resultado de nuestra busqueda
+- **4**: - _En el selector currency conversion que es conversión moneda se podrá elegir entre USD peso colombiano y peso mexicano para saber el valor de cada pais.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
