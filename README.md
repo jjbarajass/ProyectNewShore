@@ -15,9 +15,7 @@ solución debe estar dividida en módulos.
 
 - **1**: - _Se clona el repositorio
 - **2**: - _Se abre el proyecto en Visual Studio Code 
-- **3**: - _Se abre una terminar y se ejecuta el comando para levantar el servidor locan (ng serve -o) 
-- **Jairo Enrique Aquite Ramirez**: - _Administrador BD_ - [jaquite](https://github.com/jaquite)
-- **Luis Fernando Yepes Molina**: - _Scrum Master_ - [luisfer-2019](https://github.com/luisfer-2019)
+- **3**: - _Se abre una terminar y se ejecuta el comando para levantar el servidor locan (ng serve -o)
 
 # Pasos para probar el proyecto 🎯
 
