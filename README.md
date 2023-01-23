@@ -9,8 +9,7 @@ mundo, esta solución debe recibir como parámetros el origen y el destino de vi
 después el sistema debe consultar todos los vuelos asociados que tenga, y devolver la ruta de viaje 
 al usuario si la ruta es posible o un mensaje avisando que la ruta no puede ser calculada.
 Construya una solución web que pueda cumplir con el requerimiento anteriormente descrito, la 
-solución debe estar dividida en módulos
-## Autores ✒️
+solución debe estar dividida en módulos.
 
 # Ejecución del proyecto 🎯
 
