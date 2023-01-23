@@ -1,0 +1,103 @@
+.contenedorNav {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedoImagen {
+  display: flex;
+  width: 125px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedorMenu {
+  display: flex;
+  width: 210px;
+}
+
+.contenedorBoton {
+  display: flex;
+  width: 130px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedorHamburguesa {
+  display: flex;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagenLogo {
+  width: 120px;
+  height: 60px;
+  margin-left: 5px;
+}
+
+.btnIniciarSesion {
+  background: #403372;
+  height: 30px;
+  border-radius: 15px;
+  color: white;
+  width: 120px;
+  border: none;
+  font-size: medium;
+}
+
+.boton-sesion {
+  width: 120px;
+  height: 30px;
+  background: rgb(155, 245, 153);
+  background: radial-gradient(
+    circle,
+    rgba(155, 245, 153, 1) 0%,
+    rgba(58, 136, 228, 1) 100%
+  );
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: medium;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Add shadow effect */
+  font-weight: bold;
+  text-shadow: 1px 1px#333131;
+  font-size: medium;
+}
+
+.boton-sesion:hover {
+  background-color: #70f8d6;
+  color: rgb(5, 5, 5); /* White text */
+  transform: scale(1.1);
+}
+
+.hamburguesa {
+  height: 20px;
+  width: 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.hamburguesa:hover {
+  transform: scale(1.2);
+}
+
+.primeraLinea {
+  height: 6px;
+  width: 40px;
+  margin-bottom: 5px;
+  background: white;
+  border-radius: 8px;
+}
+
+.ultimaLinea {
+  height: 6px;
+  width: 40px;
+  border-radius: 8px;
+  background: white;
+}

@@ -1,0 +1,109 @@
+<section class="main-container">
+  <img class="imagenPrincipal" src="assets/media/Vuelos.jpg" alt="" />
+  <div class="ContendorTextoPrincipal">
+    <p class="textoPrincipal">
+      We create airline solutions through technology and business expertise.
+    </p>
+  </div>
+  <hr class="lineaDivision" />
+
+  <div class="contenedorModal">
+    <div></div>
+    <form class="contenedorForm" action="">
+      <div>
+        <h1 class="tituloModal">Where do you want to go?</h1>
+      </div>
+
+      <div class="contenedorPrimerInput">
+        <img
+          class="imagenPrimerInput"
+          src="assets/media/plane-departure-solid.svg"
+          alt=""
+        />
+        <input
+          [(ngModel)]="origen"
+          (ngModelChange)="origen = $event.toUpperCase()"
+          [ngModelOptions]="{ standalone: true }"
+          pattern="^[^0-9]*$"
+          minlength="3"
+          maxlength="3"
+          class="input"
+          type="text"
+          name="Origin"
+          id=""
+          placeholder="Origin"
+        />
+      </div>
+      <div class="contenedorSegundoInput">
+        <img
+          class="imagenSegundoInput"
+          src="assets/media/plane-arrival-solid.svg"
+          alt=""
+        />
+        <input
+          [(ngModel)]="destino"
+          (ngModelChange)="destino = $event.toUpperCase()"
+          [ngModelOptions]="{ standalone: true }"
+          pattern="^[^0-9]*$"
+          minlength="3"
+          maxlength="3"
+          class="input"
+          type="text"
+          name="Destination"
+          id=""
+          placeholder="Destination"
+        />
+      </div>
+      <div class="contenedorSearch">
+        <img class="imagenSegundoInput" src="assets/media/search.svg" alt="" />
+        <button (click)="getData()" class="contenedorBtnBuscar">
+          Search Flights
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="contenedorCard">
+    <div class="card" *ngIf="respuesta.obj">
+      <!-- <div class="card"> -->
+      <!-- <div class="cardEncabezado">
+        <img class="imagenEncabezado" src="assets/media/Vuelos3.jpg" alt="" />
+        <h3>{{ respuesta?.obj?.mensaje }}</h3>
+      </div> -->
+      <div class="cardContenido">
+        <div class="contenedorRespuestas">
+          <div class="respuestas">
+            <h4>Origin: {{ respuesta?.obj?.Origen }}</h4>
+            <h4>airline: {{ respuesta?.obj?.Aerolinea }}</h4>
+            <h4 *ngIf="monedaSeleccionada === 'MXN'">
+              Price: $ {{ auxValorMoneda }}
+            </h4>
+            <h4 *ngIf="monedaSeleccionada === 'COP'">
+              Price: $ {{ auxValorMoneda }}
+            </h4>
+            <h4 *ngIf="monedaSeleccionada === 'USD'">
+              Price: $ {{ respuesta?.obj?.Precio }}
+            </h4>
+          </div>
+          <div class="respuestas">
+            <h4>Destination: {{ respuesta?.obj?.Destino }}</h4>
+            <h4>Flight Number: {{ respuesta?.obj?.NumeroVuelo }}</h4>
+            <!--  <h4>Precio: {{ respuesta.obj.Precio }}</h4> -->
+            <tr>
+              <td colspan="5">
+                <label>currency conversion:</label>
+                <select
+                  [(ngModel)]="monedaSeleccionada"
+                  (change)="convertirMoneda()"
+                >
+                  <option value="USD">USD</option>
+                  <option value="COP">Colombian peso</option>
+                  <option value="MXN">Mexican peso</option>
+                </select>
+              </td>
+            </tr>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
