@@ -14,8 +14,9 @@ solución debe estar dividida en módulos.
 # Ejecución del proyecto 🎯
 
 - **1**: - _Se clona el repositorio
-- **2**: - _Se abre el proyecto en Visual Studio Code 
-- **3**: - _Se abre una terminar y se ejecuta el comando para levantar el servidor locan (ng serve -o)
+- **2**: - _Se abre el proyecto en Visual Studio Code
+- **3**: - _Se le da npm install para que instale todas las dependencias 
+- **4**: - _Se abre una terminar y se ejecuta el comando para levantar el servidor locan (ng serve -o)
 
 # Pasos para probar el proyecto 🎯
 
